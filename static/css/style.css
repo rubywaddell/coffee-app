@@ -2,6 +2,9 @@ body {
   width: 650px;
   margin: 0 auto;
   font-family: 'Helvetica', sans-serif;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG");
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)), url("https://media0.giphy.com/media/HVhofxmUXMyGs/200.gif");
+
 }
 
 main {
@@ -51,7 +54,8 @@ td {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
+  color: rgb(202, 4, 202);
 }
 
 #cart-total:before {
@@ -73,9 +77,22 @@ h2 {
 #order-status-message {
   text-align: center;
   font-style: italic;
+  font-family: "Lucida Handwriting";
+  font-size: 40px;
+  color: burlywood;
+
 }
 
 #your-cart h2 {
   display: grid;
   grid-template: 'total place' auto / 1fr 1fr;
+}
+img {
+  border-radius: 8px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 20;
 }

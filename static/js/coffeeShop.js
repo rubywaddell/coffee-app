@@ -41,9 +41,16 @@ const setProgressAndStatus = (progressVal, statusMsg) => {
 $('.add-to-order').on('click',() =>{
 addItemToCart('Coffee');
 incrementCartTotal(1.50);
+setProgressAndStatus(50, 'Added to order')
 });
 
 $('#place-order').on('click', () => {
 incrementCoffeeSold($('#cart-items').children().length);
 resetCart();
+setProgressAndStatus(100, 'Order placed');
 });
+
+// $('.add-to-order').on('click',() =>{
+//   setProgressAndStatus(50, 'half')
+
+
